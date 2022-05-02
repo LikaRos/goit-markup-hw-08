@@ -1,0 +1,30 @@
+.mailing {
+  display: flex;
+  width: 50%;
+  text-align: left;
+  margin-left: 93px;
+  flex-direction: column;
+}
+.mailing-form {
+  display: flex;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: var(--white-text-color);
+}
+.footer-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white-text-color);
+  line-height: 1.7;
+  background: var(--background-color);
+  padding: 15px 16px;
+}

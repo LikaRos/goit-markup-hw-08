@@ -1,0 +1,93 @@
+// Button type "button"
+
+.hero-button {
+  width: 200px;
+  height: 50px;
+  line-height: 2;
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color-blue);
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border-color: var(--accent-text-color-blue);
+}
+
+.button-filter {
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: var(--button-background);
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &r:active {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Close button of modal (cross)
+
+.close-modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: transparent;
+  right: 8px;
+  top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-text-color);
+
+  &:focus .close-icon,
+  &:hover .close-icon {
+    fill: var(--accent-text-color-blue);
+  }
+}
+.close-icon {
+  position: absolute;
+  fill: var(--accent-text-color-black);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Footer Submit button
+.footer-submit {
+  position: relative;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  text-align: left;
+  line-height: 2;
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color-blue);
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  border-color: var(--accent-text-color-blue);
+  flex-shrink: 0;
+}
+
+.btn-icon {
+  position: absolute;
+  margin-left: 10px;
+}

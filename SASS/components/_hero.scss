@@ -1,0 +1,31 @@
+/* Components/ Hero  */
+.hero {
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+      to top,
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url(../images/people.jpg);
+  max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-container {
+  text-align: center;
+}
+/* Title */
+.hero-title {
+  display: inline-block;
+  width: 696px;
+  color: var(--white-text-color);
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
