@@ -1,11 +1,7 @@
 /* Components/ Hero  */
 .hero {
-  background-color: var(--background-color);
-  background-image: linear-gradient(
-      to top,
-      var(--gradient-color),
-      var(--gradient-color)
-    ),
+  background-color: $background-color;
+  background-image: linear-gradient(to top, $gradient-color, $gradient-color),
     url(../images/people.jpg);
   max-width: 1600px;
   margin: 0 auto;
@@ -21,7 +17,7 @@
 .hero-title {
   display: inline-block;
   width: 696px;
-  color: var(--white-text-color);
+  color: $white-text-color;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;

@@ -1,18 +1,18 @@
 /* Logo */
 .logo-link {
-  font-family: Raleway;
+  font-family: $accent-font;
   font-style: normal;
   font-size: 26px;
-  color: var(--accent-text-color-black);
+  color: $accent-text-color-black;
   &--text-blue {
-    color: var(--accent-text-color-blue);
+    color: $accent-text-color-blue;
   }
 }
 
 /* Base  */
 .header {
-  border-bottom: 1px solid var(--header-line-color);
-  background-color: var(--white-text-color);
+  border-bottom: 1px solid $header-line-color;
+  background-color: $white-text-color;
 }
 /* Base  */
 .header__container {
@@ -23,15 +23,17 @@
 /* Navigation */
 .nav {
   margin-left: 93px;
+}
+.nav__list {
+  display: none;
 
-  &__list {
+  @include mq(tablet) {
     display: flex;
     align-items: center;
   }
 }
-
 .nav__link.nav__link--current {
-  color: var(--accent-text-color-blue);
+  color: $accent-text-color-blue;
   position: relative;
   &::after {
     content: "";
@@ -42,7 +44,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--accent-text-color-blue);
+    background-color: $accent-text-color-blue;
   }
 }
 
@@ -55,7 +57,7 @@
 }
 
 .nav__link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -67,7 +69,7 @@
   &:hover,
   &:focus,
   &:focus {
-    color: var(--accent-text-color-blue);
+    color: $accent-text-color-blue;
   }
 }
 
@@ -83,7 +85,7 @@
 
 .contact__link {
   display: flex;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -93,19 +95,24 @@
 
   &:hover .contact__icons,
   &:focus .contact__icons {
-    fill: var(--accent-text-color-blue);
+    fill: $accent-text-color-blue;
   }
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
+  display: none;
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
   &__icons {
     display: block;
     margin-right: 10px;
-    fill: var(--secondary-text-color);
+    fill: $secondary-text-color;
     /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 			transition-duration: 250ms;
 			transition-property: color; */
@@ -115,6 +122,9 @@
   &__link:hover,
   &__link:active,
   &__link:focus {
-    color: var(--accent-text-color-blue);
+    color: $accent-text-color-blue;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }

@@ -1,16 +1,32 @@
-:root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --accent-text-color-blue: #2196f3;
-  --white-text-color: #ffffff;
-  --accent-text-color-black: #000000;
-  --background-color: #2f303a;
-  --button-background: #f5f4fa;
-  --border-color: #eee;
-  --header-line-color: #ececec;
-  --clients-icon-color: #afb1b8;
-  --gradient-color: rgba(47, 48, 58, 0.4);
-  --icon-background: rgba(255, 255, 255, 0.1);
-  --indent: 30px;
-  --items: 4;
-}
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-text-color-blue: #2196f3;
+$white-text-color: #ffffff;
+$accent-text-color-black: #000000;
+$background-color: #2f303a;
+$button-background: #f5f4fa;
+$border-color: #eee;
+$header-line-color: #ececec;
+$clients-icon-color: #afb1b8;
+$gradient-color: rgba(47, 48, 58, 0.4);
+$icon-background: rgba(255, 255, 255, 0.1);
+$indent: 30px;
+$items: 4;
+$primary-font: Roboto, sans-serif;
+$accent-font: Raleway;
+
+// var(--primary-text-color)
+// var(--secondary-text-color)
+
+// var(--accent-text-color-blue)
+// var(--white-text-color)
+// var(--accent-text-color-black)
+// var(--background-color)
+// var(--button-background)
+// var(--border-color)
+// var(--header-line-color)
+// var(--clients-icon-color)
+// var(--gradient-color)
+// var(--icon-background)
+// var(--indent: 30px)
+// var(--items: 4)

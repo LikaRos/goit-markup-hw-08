@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--button-background);
+  background-color: $button-background;
 }
 .team-title {
   font-size: 36px;
@@ -18,7 +18,7 @@
   );
 }
 .staff-item {
-  background-color: var(--white-text-color);
+  background-color: $white-text-color;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
 }
 
 .staff-nick {
-  font-family: Roboto, sans-serif;
+  font-family: $primary-font, sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@
 
 .staff p {
   font-weight: 400;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .staff-name {

@@ -20,21 +20,19 @@
   border-radius: 50%;
   background-color: var(--icon-background);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
 
-		&:hover .social-icons,
-		&:focus .social-icons {
-		fill: var(--white-text-color);
-		}
-		&:hover,
-		&:focus {
-		background-color: var(--accent-text-color-blue);
-		}
-
+  &:hover .social-icons,
+  &:focus .social-icons {
+    fill: $white-text-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color-blue;
+  }
 }
 
 .social-icons {
-  fill: var(--clients-icon-color);
+  fill: $clients-icon-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;

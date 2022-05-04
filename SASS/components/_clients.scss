@@ -16,17 +16,17 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px var(--clients-icon-color) solid;
+  border: 1px $clients-icon-color solid;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .clients-icons,
   &:focus .clients-icons {
-    fill: var(--accent-text-color-blue);
+    fill: $accent-text-color-blue;
   }
 
   &:hover,
   &:focus {
-    border-color: var(--accent-text-color-blue);
+    border-color: $accent-text-color-blue;
   }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .clients-icons {
-  fill: var(--clients-icon-color);
+  fill: $clients-icon-color;
   display: block;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
