@@ -40,10 +40,9 @@
     margin-right: 30px;
   }
 
-    @media screen and (max-width: 1199px) {
-      &:nth-child(even) {
-        margin-right: 0px;
-      }
+  @media screen and (max-width: 1199px) {
+    &:nth-child(even) {
+      margin-right: 0px;
     }
   }
 
@@ -51,8 +50,6 @@
     flex-basis: calc((100% - 30px * 3) / 3);
   }
 }
-
-
 
 .works-link {
   display: block;

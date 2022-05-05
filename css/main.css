@@ -496,20 +496,20 @@ address {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/Header-sm.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-sm.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/Header-tablet.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     background-color: #2f303a;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header/Header-lg.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-lg.jpg);
     max-width: 1600px;
     margin: 0 auto;
     background-size: cover;
@@ -524,22 +524,21 @@ address {
 }
 
 /* Title */
+.hero-title {
+  display: inline-block;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1199px) {
   .hero-title {
-    display: inline-block;
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-weight: 900;
     font-size: 24px;
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-title {
-    width: 360px;
   }
 }
 
@@ -1324,6 +1323,12 @@ address {
   margin-right: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .works {
+    flex-basis: 50%;
+  }
+}
+
 .works-item {
   margin-right: 0px;
   margin-top: 30px;
@@ -1336,7 +1341,7 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .works-item:nth-child(even) {
     margin-right: 0px;
   }
@@ -1345,16 +1350,6 @@ address {
 @media screen and (min-width: 1200px) {
   .works-item {
     flex-basis: calc((100% - 30px * 3) / 3);
-  }
-}
-
-.works-picture {
-  max-width: 450 px;
-}
-
-@media screen and (min-width: 768px) {
-  .works-picture {
-    max-width: 354 px;
   }
 }
 

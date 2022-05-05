@@ -11,18 +11,18 @@
 
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/Header/Header-sm.jpg);
+      url(../images/header/Header-sm.jpg);
   }
 
   @include mq(tablet) {
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/Header/Header-tablet.jpg);
+      url(../images/header/Header-tablet.jpg);
   }
 
   @include mq(desktop) {
     background-color: $background-color;
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/Header/Header-lg.jpg);
+      url(../images/header/Header-lg.jpg);
     max-width: 1600px;
     margin: 0 auto;
     background-size: cover;
@@ -38,19 +38,18 @@
 
 /* Title */
 .hero-title {
+  display: inline-block;
+  color: $white-text-color;
+  margin-bottom: 30px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
   @media screen and (max-width: 1199px) {
-    display: inline-block;
-    color: $white-text-color;
-    margin-bottom: 30px;
-    font-weight: 900;
     font-size: 24px;
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-  }
-
-  @include mq(desktop) {
-    width: 360px;
   }
 
   @include mq(desktop) {
