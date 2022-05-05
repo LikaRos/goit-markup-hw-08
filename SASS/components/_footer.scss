@@ -3,6 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 /* Logo */
 .logo-link--text-white {
   color: $white-text-color;
@@ -11,6 +12,11 @@
   margin-bottom: 20px;
   display: inline-block;
   margin-right: 0;
+  text-align: center;
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }
 
 /* Contact/footer */
@@ -25,26 +31,80 @@
 .link-contact {
   opacity: 0.6;
 }
+address {
+  margin-bottom: 60px;
+
+  @include mq(desktop) {
+    margin-bottom: 0px;
+  }
+}
 
 /* Component/Footer */
 .footer-flex {
   display: flex;
-  align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @include mq(tablet) {
+    flex-wrap: wrap;
+  }
+
+  @include mq(desktop) {
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-left {
+  margin: 0 auto;
+  text-align: center;
+  @include mq(tablet) {
+    flex-basis: 50%;
+  }
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }
 
 .footer-right {
-  margin-left: 70px;
+  margin: 0 auto;
+
+  @include mq(tablet) {
+    flex-basis: 50%;
+  }
+
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
 }
+
 .right-title {
+  text-align: center;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: $white-text-color;
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }
+
 /* Socials/Footer  */
 .right-group {
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
+
+  @include mq(tablet) {
+    justify-content: center;
+  }
+  @include mq(desktop) {
+    justify-content: center;
+  }
 }
 .right-list {
   margin-right: 10px;
@@ -61,7 +121,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--icon-background);
+  background-color: $icon-background;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

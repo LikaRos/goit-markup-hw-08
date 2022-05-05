@@ -1,27 +1,62 @@
 /* Components/ Hero  */
 .hero {
-  background-color: $background-color;
-  background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-    url(../images/people.jpg);
-  max-width: 1600px;
-  margin: 0 auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @media screen and (max-width: 1199px) {
+    background-color: $background-color;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to top, $gradient-color, $gradient-color),
+      url(../images/Header/Header-sm.jpg);
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(to top, $gradient-color, $gradient-color),
+      url(../images/Header/Header-tablet.jpg);
+  }
+
+  @include mq(desktop) {
+    background-color: $background-color;
+    background-image: linear-gradient(to top, $gradient-color, $gradient-color),
+      url(../images/Header/Header-lg.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
+
 .hero-container {
   text-align: center;
 }
+
 /* Title */
 .hero-title {
-  display: inline-block;
-  width: 696px;
-  color: $white-text-color;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.5;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    display: inline-block;
+    color: $white-text-color;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  @include mq(desktop) {
+    width: 360px;
+  }
+
+  @include mq(desktop) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.5;
+  }
 }

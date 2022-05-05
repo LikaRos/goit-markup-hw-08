@@ -1,28 +1,74 @@
 .team {
   background-color: $button-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .team-title {
-  font-size: 36px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include mq(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .staff {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+  }
 }
-.staff-item:not(:last-child) {
-  margin-right: 30px;
-  flex-basis: calc(
-    (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
-  );
-}
+
 .staff-item {
   background-color: $white-text-color;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(tablet) {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(even) {
+      margin-right: 0px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:not(:last-child) {
+    @include mq(desktop) {
+      margin-right: 30px;
+      flex-basis: calc(
+        (100% - (var(--indent) * (var(--items) - 1))) / var(--items)
+      );
+    }
+  }
 }
 
 .staff-nick {
