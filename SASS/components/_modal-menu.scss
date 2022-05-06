@@ -22,6 +22,11 @@
   opacity: 1;
 }
 
+.menu-button.is-open {
+  position: fixed;
+  right: 0;
+}
+
 .menu-button.is-open .menu-icon-open {
   opacity: 0;
 }
@@ -122,11 +127,11 @@
 
 .menu__contact-link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   color: $secondary-text-color;
 
   &--tel {
-    font-size: 34px;
+    font-size: 26px;
     color: $accent-text-color-blue;
     line-height: 1.18;
   }

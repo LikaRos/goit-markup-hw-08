@@ -11,18 +11,18 @@
 
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/header/Header-sm.jpg);
+      url(../images/header/mobile/image.jpg);
   }
 
   @include mq(tablet) {
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/header/Header-tablet.jpg);
+      url(../images/header/tablet/image.jpg);
   }
 
   @include mq(desktop) {
     background-color: $background-color;
     background-image: linear-gradient(to top, $gradient-color, $gradient-color),
-      url(../images/header/Header-lg.jpg);
+      url(../images/header/desktop/image.jpg);
     max-width: 1600px;
     margin: 0 auto;
     background-size: cover;
@@ -46,6 +46,7 @@
   text-transform: uppercase;
 
   @media screen and (max-width: 1199px) {
+    width: 360px;
     font-size: 24px;
     line-height: 1.61;
     letter-spacing: 0.06em;

@@ -31,8 +31,6 @@
 }
 
 .text-overlap {
-  display: none;
-
   @include mq(desktop) {
     position: absolute;
     background-color: rgba(47, 48, 58, 0.8);

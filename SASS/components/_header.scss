@@ -187,10 +187,9 @@
   &__link:focus {
     color: $accent-text-color-blue;
   }
-  &__link:hover,
-  contact__icons,
-  &__link:active,
-  contact__icons,
+
+  &__link:hover .contact__icons,
+  &__link:active .contact__icons,
   &__link:focus .contact__icons {
     fill: $accent-text-color-blue;
   }

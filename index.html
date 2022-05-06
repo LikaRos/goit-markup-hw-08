@@ -316,30 +316,63 @@
           <h2 class="activities-title">Чем мы занимаемся</h2>
           <ul class="activities-images">
             <li class="activities-item">
-              <img
-                class="activities-picture"
-                src="../images/Activities/LG/box1.jpg"
-                width="370"
-                alt="box1"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/desktop/box1.jpg    1x,
+                    ./images/activities/desktop/box1@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="activities-picture"
+                  src=" ./images/activities/desktop/box1.jpg "
+                  width="370"
+                  alt="box1"
+                />
+              </picture>
+
               <p class="text-overlap">Десктопные приложения</p>
             </li>
             <li class="activities-item">
-              <img
-                class="activities-picture"
-                src="../images/Activities/LG/box2.jpg"
-                width="370"
-                alt="box 2"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/desktop/box2.jpg    1x,
+                    ./images/activities/desktop/box2@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="activities-picture"
+                  src=" ./images/activities/desktop/box2.jpg "
+                  width="370"
+                  alt="box2"
+                />
+              </picture>
+
               <p class="text-overlap">Мобильные приложения</p>
             </li>
             <li class="activities-item">
-              <img
-                class="activities-picture"
-                src="../images/Activities/LG/box3.jpg"
-                width="370"
-                alt="box3"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/desktop/box3.jpg    1x,
+                    ./images/activities/desktop/box3@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="activities-picture"
+                  src=" ./images/activities/desktop/box3.jpg "
+                  width="370"
+                  alt="box3"
+                />
+              </picture>
+
               <p class="text-overlap">Дизайнерские решения</p>
             </li>
           </ul>
@@ -421,12 +454,37 @@
               </div>
             </li>
             <li class="staff-item">
-              <!-- <img
-                class="staff-picture"
-                src="./images/team/team_card2.jpg"
-                width="270"
-                alt="Ольга Репина"
-              /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/team-2.jpg    1x,
+                    ./images/team/desktop/team-2@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/team-2.jpg    1x,
+                    ./images/team/tablet/team-2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/team-2.jpg    1x,
+                    ./images/team/mobile/team-2@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff-picture"
+                  src="./images/team/mobile/team-2.jpg"
+                  width="270"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <div class="staff-name">
                 <h3 class="staff-nick">Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -466,12 +524,37 @@
               </div>
             </li>
             <li class="staff-item">
-              <!-- <img
-                class="staff-picture"
-                src="./images/team/team_card3.jpg"
-                width="270"
-                alt="Николай Тарасов"
-              /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/team-3.jpg    1x,
+                    ./images/team/desktop/team-3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/team-3.jpg    1x,
+                    ./images/team/tablet/team-3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/team-3.jpg    1x,
+                    ./images/team/mobile/team-3@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff-picture"
+                  src="./images/team/mobile/team-3.jpg"
+                  width="270"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+
               <div class="staff-name">
                 <h3 class="staff-nick">Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -511,12 +594,37 @@
               </div>
             </li>
             <li class="staff-item">
-              <!-- <img
-                class="staff-picture"
-                src="./images/team/team_card4.jpg"
-                width="270"
-                alt="Михаил Ермаков"
-              /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desktop/team-4.jpg    1x,
+                    ./images/team/desktop/team-4@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tablet/team-4.jpg    1x,
+                    ./images/team/tablet/team-4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mobile/team-4.jpg    1x,
+                    ./images/team/mobile/team-4@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff-picture"
+                  src="./images/team/mobile/team-4.jpg"
+                  width="270"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <div class="staff-name">
                 <h3 class="staff-nick">Михаил Ермаков</h3>
                 <p>Marketing</p>
