@@ -31,6 +31,10 @@
   padding-top: 15px;
   color: $white-text-color;
 
+  @include mq(tablet) {
+    max-width: 450px;
+  }
+
   @include mq(desktop) {
     display: flex;
     width: 358px;

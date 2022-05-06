@@ -1022,6 +1022,12 @@ address {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-input {
     display: flex;
